@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/fast_xls_to_hash'
+
+module FastXlsToHash
+  ParseXls.to_hash('/Users/nerzh/mydata/Dropbox/D/test.xls')
+end
+

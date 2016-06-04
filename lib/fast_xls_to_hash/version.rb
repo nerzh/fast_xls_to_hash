@@ -1,3 +1,3 @@
 module FastXlsToHash
-  VERSION = "0.1.0"
+  VERSION = "0.1.11111111111111"
 end

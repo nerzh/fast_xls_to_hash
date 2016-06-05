@@ -34,7 +34,7 @@ module FastXlsToHash
 
     private
 
-    def kill(object)
+    def self.kill(object)
       object = nil
       GC.start
     end

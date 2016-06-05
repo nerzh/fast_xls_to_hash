@@ -1,5 +1,7 @@
 ## FastXlsToHash
 
+[![Code Climate](https://codeclimate.com/github/woodcrust/fast_xls_to_hash/badges/gpa.svg)](https://codeclimate.com/github/woodcrust/fast_xls_to_hash)
+
 ```ruby
 example: { :list_1 => 
              { :row_1 => 

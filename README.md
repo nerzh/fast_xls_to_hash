@@ -2,6 +2,8 @@
 
 [![Code Climate](https://codeclimate.com/github/woodcrust/fast_xls_to_hash/badges/gpa.svg)](https://codeclimate.com/github/woodcrust/fast_xls_to_hash)
 
+This gem can to convert your xls to hash ! Really cool ! It's amazing gem, it's true.
+
 ```ruby
 example: { :list_1 => 
              { :row_1 => 

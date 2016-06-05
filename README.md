@@ -1,6 +1,6 @@
 ## FastXlsToHash
 
-```json
+```ruby
 example: { :list_1 => 
              { :row_1 => 
                { :column_1 => 'value',
@@ -35,7 +35,7 @@ Install it yourself as:
 
 ## Usage
 
-in rails
+e.g. in rails
 ```ruby
 class Example
 

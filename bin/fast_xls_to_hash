@@ -5,7 +5,7 @@ require_relative '../lib/fast_xls_to_hash'
 module FastXlsToHash
   ERROR = 'I need xls file path'
 
-  dir =  ARGV[0] ? ARGV[0] : return p ERROR
+  ARGV[0] ? dir = ARGV[0] : (return p ERROR)
   ParseXls.to_hash(dir)
 end
 

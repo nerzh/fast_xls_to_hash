@@ -1,8 +1,21 @@
-# FastXlsToHash
+## FastXlsToHash
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fast_xls_to_hash`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+```json
+example: { :list_1 => 
+             { :row_1 => 
+               { :column_1 => 'value',
+                 :column_2 => 100,
+                 :column_3 => #<DateTime: 2016-11-01T00:00:00+00:00>
+               },
+               :row_2 => 
+               { :column_1 => 'value2',
+                 :column_2 => 200,
+                 :column_3 => #<DateTime: 2016-12-01T00:00:00+00:00>
+               }
+             },
+           :list_2 => {...} 
+         }
+```
 
 ## Installation
 
@@ -16,23 +29,31 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
+Install it yourself as:
 
     $ gem install fast_xls_to_hash
 
 ## Usage
 
-TODO: Write usage instructions here
+in rails
+```ruby
+class Example
 
-## Development
+  include FastXlsToHash
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+  dir_of_xls  = '/data/test.xls'
+  hash_of_xls = ParseXls.to_hash(dir_of_xls)
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+end
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/fast_xls_to_hash. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
 
 
 ## License

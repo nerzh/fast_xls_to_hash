@@ -66,6 +66,7 @@ e.g. in rails
 class Example
 
   include FastXlsToHash
+  FastXlsToHash.with_xls_style = true          #optional, default false
 
   dir_of_xls  = '/data/test.xls'
   hash_of_xls = ParseXls.to_hash(dir_of_xls)

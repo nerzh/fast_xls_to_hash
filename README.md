@@ -20,6 +20,28 @@ example: { :list_1 =>
            :list_2 => {...} 
          }
 ```
+or if you want to use xls style of names
+
+```ruby
+FastXlsToHash.with_xls_style = true
+```
+
+```ruby
+example: { :list_1 => 
+             { :'1' => 
+               { :A => 'value',
+                 :B => 100,
+                 :C => #<DateTime: 2016-11-01T00:00:00+00:00>
+               },
+               :'2' => 
+               { :A => 'value2',
+                 :B => 200,
+                 :C => #<DateTime: 2016-12-01T00:00:00+00:00>
+               }
+             },
+           :list_2 => {...} 
+         }
+```
 
 ## Installation
 
